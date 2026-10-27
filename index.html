@@ -24,7 +24,7 @@ const toggle=document.getElementById('languageToggle');let lang='es';
 function setLanguage(next){lang=next;document.documentElement.lang=lang;document.querySelectorAll('[data-es][data-en]').forEach(el=>{el.innerHTML=el.getAttribute('data-'+lang)});toggle.textContent=lang==='es'?'English':'Español';toggle.setAttribute('aria-label',lang==='es'?'Switch to English':'Cambiar a español')}
 toggle.addEventListener('click',()=>setLanguage(lang==='es'?'en':'es'));
 document.getElementById('year').textContent=new Date().getFullYear();
-// To enable WhatsApp later, replace 507XXXXXXXX with the actual business number:
-// const wa=document.getElementById('whatsapp');wa.outerHTML='<a class="btn" id="whatsapp" href="https://wa.me/507XXXXXXXX?text='+encodeURIComponent('Hola, quiero información sobre las excursiones de E&F PTY')+'">💬 WhatsApp</a>';
+// To enable WhatsApp later, replace 60723456 with the actual business number:
+// const wa=document.getElementById('whatsapp');wa.outerHTML='<a class="btn" id="whatsapp" href="https://wa.me/60723456?text='+encodeURIComponent('Hola, quiero información sobre las excursiones de E&F PTY')+'">💬 WhatsApp</a>';
 </script>
 </body></html>
